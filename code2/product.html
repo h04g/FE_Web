@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            
+            <div class="grid wide">
+             <nav class="header__navbar hide-on-moblie-tablet">
+                
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--sperate">
+                        Vào trên ứng dụng 
+                        <!-- QR Code -->
+                        <div class="header__qr">
+                            <img src="./assets/img/QR_code.png" alt="QR" class="header__qr-img">
+                            <div class="header__qr-apps">
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/ggplay.png" alt="GOOGLE PLAY" class="header__qr-download-img">
+
+                                </a>
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/appstore.png" alt="APP STORE" class="header__qr-download-img">
+                                </a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar--title-no-pointer">Kết nối</span>               
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header_navbar-icon fa-brands fa-facebook"></i>
+
+                        </a>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header_navbar-icon fa-brands fa-instagram"></i>
+                            
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__bars-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header_navbar-icon fa-solid fa-circle-plus"></i>
+                            Thêm
+                        </a>
+                       
+
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header_navbar-icon fa-solid fa-circle-question"></i>
+                            Trợ giúp
+                        </a>
+
+                    </li>
+                    <!-- ĐĂNG KÝ/ ĐĂng NHẬP -->
+                   <li class="header__navbar-item header__navbar-item--strong header__navbar-item--sperate js-sign-up">Đăng ký</li> 
+                    <li class="header__navbar-item header__navbar-item--strong js-login">Đăng nhập</li>  
+                    <!-- USER -->
+                     <!-- <li class="header__navbar-item header__navbar-user">
+                        <img src="./assets/img/278741648_1013518016239314_9144889803889079552_n.jpg" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Thao Chi</span>
+
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="">Tài khoản của tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item header__navbar-user-item-sperarate ">
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>  -->
+
+                </ul>
+
+            </nav>
+            
+            <!-- Header with search -->
+           
+            <div class="header-with-search">
+                <label for="moblie-search-checkbox" class="header__moblie-search">
+                    <i class="header__moblie-search-icon fa-solid fa-magnifying-glass"></i>
+                </label>
+                
+                <div class="header__logo hide-on-tablet">
+                    <a href="/" class="header__logo-link">
+                        <img src="/assets/img/Untitled-2.png" alt="" class="header__logo-pic">
+                        
+                    </a>
+                    
+                </div>
+                <input type="checkbox" hidden id="moblie-search-checkbox" class="header__search-checkbox">
+
+                <div class="header__search ">
+                    <input type="text" class="header__search-input" placeholder=" Tìm kiếm công thức">
+                    
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+
+
+
+                </div>
+                <!-- CArt layout -->
+                <div class="header__cart">
+                    <div class="header__cart-warp">
+                        <span class="header__cart-notice">2</span>
+
+                        <i class="header__cart-icon fa-solid fa-heart"></i>
+
+                        <!-- NO cart: header__cart-list--no-cart -->
+                        <div class="header__cart-list ">
+                            <img src="./assets/img/no_cart.jpg" alt="" class="header__cart-no-cart-img">
+                            <span class="header__cart-list-no-cart-msg"> 
+                                Chưa có công thức
+                            </span>
+
+                            <h4 class="header__cart-heading">Công thức đã thêm</h4>
+                              <ul class="header__cart-list-item">
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/1653816524379ame1.jpg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">New Recipe 2</h5>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">American</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/1653816902629ame2.jpg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Vegan m'hanncha</h5>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">Vegan</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                              </ul>
+    
+    
+    
+                        </div>
+                    </div>
+                    
+                
+                </div>
+            </div>
+          </div>  
+          <ul class="header__sort-bar">
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link header__sort-item-active">Mới nhất</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Ngẫu nhiên</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Vegan</a>
+            </li>
+            
+          </ul>
+        </header>
+
+
+        <!-- Product -->
+
+        <section class="product">
+            <div class="product-container">
+                <div class="product-top row">
+                    <P>Home</P> <span>&#10230; </span> <p>Mới nhất</p> <span>&#10230; </span> <p>Vegan</p> <span>&#10230; </span> <p>The best vegan burger</p>
+                    
+                </div>
+                <div class="product-content row">
+                    <div class="product-content-left">
+                        <div class="product-content-left-big-img">
+                            <img src="./assets/img/1653818666259vegan2.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="product-content-right">
+                        <div class="product-content-right-product-name">
+                            <h1>THE BEST VEGAN BURGER</h1>
+                           
+                        </div>
+                        <div class="product-content-righ-tag">
+                            <i class="roduct-content-right-tag-icon fa-solid fa-tag"></i> <a href="">Vegan</a>
+                        </div>
+                        <div class="product-content-right-mail">
+                            
+                            <i class="product-content-right-mail-icon fa-solid fa-envelope"></i> <p>20020368@vnu.edu.vn</p>
+                            
+                        </div>
+                        
+                        <div class="product-content-right-button">
+                            <button>
+                                <i class="product-content-right-button-icon fa-solid fa-heart"> </i>
+                                <p>Thêm vào yêu thích</p>
+                            </button>
+                        </div>
+                        <div class="product-content-right-bottom">
+                            <div class="product-content-right-bottom-top top">
+                                &#8744;
+                            </div>
+                            <div class="product-content-right-bottom-content-list ">
+                                <div class="product-content-right-bottom-title">
+                                    <div class="product-content-right-bottom-item thongtin">
+                                        <p>Thông tin</p>
+
+                                    </div>
+                                    <div class="product-content-right-bottom-item congthuc">
+                                         <p>Công thức</p>
+                                        
+                                    </div>
+                                    <div class="product-content-right-bottom-item binhluan">
+                                        <p>Bình luận </p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="product-content-right-bottom-content">
+                                    <div class="product-content-right-bottom-content-thongtin">
+                                        Vegan burgers can be tricky to make at home if you don’t have the right vegan recipe. Avoid the risk of a crumbly, mushy plant-based patty and try your hand at making your own vegan burgers with the following delicious vegan burger recipes. <br> <br>
+                                        Although supermarket shelves are brimming with meat-free patties so you can make tasty plant-based burgers at home, there’s nothing quite like making your own – particularly if you’re not a fan of mock meats or can’t eat soy. <br> <br>
+                                        When it comes to making vegan burger patties, you can use a range of ingredients such as mushrooms, beans and legumes, tofu and seitan to create the base.
+                                        As they’re made from plant-based ingredients and delicious spices, they’re healthier than meat and packed with even more flavour. Give them a try with these 23 amazing vegan burger ideas.
+                                    </div>
+                                    <div class="product-content-right-bottom-content-congthuc">
+                                        STEP 1:   Heat the oil in a large pan and fry the leek, mushrooms, thyme, tofu and kale for about 5 mins. Add the mustard, tamari and half of the black beans and give it a good stir. Transfer the mixture to a blender and pulse a few times – don’t over-blend, it needs to be quite chunky in texture. Scoop into a bowl and add the rest of the black beans, the oat bran, rice and chopped nuts, then mix well. <br> <br>
+
+                                        
+                                        STEP 2:   Divide the mixture into 4-6 evenly sized portions and shape into patties using your hands. Tip the gram flour onto a plate, if using, then roll the patties in the flour to coat. <br> <br>
+
+                                        
+                                        STEP 3:   To make the burger dressing, mix all ingredients together in a bowl and set aside. Fry the patties for 4-5 mins on each side until crisp on the outside. <br> <br>
+
+                                        
+                                        STEP 4:    Slide the patties into the buns with the tomato, onion, lettuce and a dollop of burger dressing.
+
+                                    </div>
+                                    <div class="product-content-right-bottom-content-binhluan">
+                                        <div class="comment-box">
+                                            <form action="#">
+                                                <textarea name="comment" placeholder="Viết bình luận của bạn"></textarea>
+                                                <button type="submit">Binh luận</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- product-related -->
+
+        <section class="product-related">
+            <div class="product-related-title">
+                <p>CÁC MÓN ĂN LIÊN QUAN</p>
+            </div>
+            <div class="row product-content-related">
+                <div class="product-related-item">
+                    <img src="./assets/img/1653816902629ame2.jpg" alt="" class="home-product-item__img-1">
+                    <h4 class="home-product-item__name">FishCakes</h4>
+                    <p>America</p>
+
+                </div>
+                <div class="product-related-item">
+                    <img src="./assets/img/1653816524379ame1.jpg" alt="" class="home-product-item__img-1">
+                    <h4 class="home-product-item__name">Vegan m'hanncha</h4>
+                    <p>America</p>
+
+                </div>
+                <div class="product-related-item">
+                    <img src="./assets/img/1653817563572Chicken-and-Rice-8.webp" alt="" class="home-product-item__img-1">
+                    <h4 class="home-product-item__name">Fish</h4>
+                    <p>America</p>
+
+                </div>
+                <div class="product-related-item">
+                    <img src="./assets/img/1653816524379ame1.jpg" alt="" class="home-product-item__img-1">
+                    <h4 class="home-product-item__name">FishCakes</h4>
+                    <p>America</p>
+
+                </div>
+                <div class="product-related-item">
+                    <img src="./assets/img/1653816902629ame2.jpg" alt="" class="home-product-item__img-1">
+                    <h4 class="home-product-item__name">FishCakes</h4>
+                    <p>America</p>
+
+                </div>
+               
+                
+
+            </div>
+
+        </section>
+        <!-- Footer -->
+        
+          <footer class="footer">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-2-4 m4 c-6">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">CNE Mail</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m4 c-6">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách</a>
+                            </li>
+                                
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoảnn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m4 c-6">
+                        <h3 class="footer__heading"></h3>
+                    </div>
+                    <div class="col l-2-4 m4 c-6">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+
+                            <li class="footer-item__icon footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m4 c-6">
+                        <h3 class="footer__heading">Vào trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/QR_code.png" alt="Download QR" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-app-link">
+                                  <img src="./assets/img/ggplay.png" alt="Google Play" class="footer__download-app-img">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                <img src="./assets/img/appstore.png" alt="Apps Store" class="footer__download-app-img">
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+
+                </div>
+            </div>
+
+        </footer>
+
+<script>
+    const thongtin = document.querySelector(".thongtin")
+    const congthuc = document.querySelector(".congthuc")
+ 
+    const binhluan = document.querySelector(".binhluan")
+
+if(thongtin){
+    thongtin.addEventListener("click", function(){
+        document.querySelector(".product-content-right-bottom-content-thongtin").style.display = "block"
+        document.querySelector(".product-content-right-bottom-content-congthuc").style.display = "none"
+        document.querySelector(".product-content-right-bottom-content-binhluan").style.display = "none"
+    })
+}
+
+if(congthuc){
+    congthuc.addEventListener("click", function(){
+        document.querySelector(".product-content-right-bottom-content-thongtin").style.display = "none"
+        document.querySelector(".product-content-right-bottom-content-congthuc").style.display = "block"
+        document.querySelector(".product-content-right-bottom-content-binhluan").style.display = "none"
+    })
+}
+if(binhluan){
+    binhluan.addEventListener("click", function(){
+        document.querySelector(".product-content-right-bottom-content-thongtin").style.display = "none"
+        document.querySelector(".product-content-right-bottom-content-congthuc").style.display = "none"
+        document.querySelector(".product-content-right-bottom-content-binhluan").style.display = "block"
+    })
+}
+
+
+
+
+</script> 
